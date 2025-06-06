@@ -39,6 +39,6 @@ if __name__ == '__main__':
 
     parsed_args = args.parse_args()
     
-    LoadData().load_data(input_path=parsed_args.input_path, output_path=parsed_args.output_path)
+    LoadData().load_data(input_path="https://raw.githubusercontent.com/jmem-ec/KRRCourse/ccbd6ccf8389ba0988d53fc9300a64da00e6368b/Consignment_pricing.csv", output_path=parsed_args.output_path)
 
 
