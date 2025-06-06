@@ -41,7 +41,7 @@ class SplitData:
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_path', default='data/processed/Processed_Dataset.csv')
+    parser.add_argument('--input_path', default='data/processed/Procesed_Dataset.csv')
     args = parser.parse_args()
 
     SplitData().split_data(input_path=args.input_path)
