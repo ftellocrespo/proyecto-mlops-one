@@ -15,3 +15,12 @@ where = ["src"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
+
+[project.scripts]
+loading = "data_eng.stage0_loading:main"
+ingestion = "data_eng.stage1_ingestion:main"
+clean = "data_eng.stage2_cleaning:main"
+feature_engineering  = "data_eng.stage3_labeling:main"
+splitting  = "data_eng.stage4_splitting:main"
+train = "model_eng.stage1_2_train_evaluate:main"
+prediction = "model_eng.stage3_prediction:main"
