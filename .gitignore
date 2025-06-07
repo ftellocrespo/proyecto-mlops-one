@@ -88,8 +88,27 @@ target/
 # Mypy cache
 .mypy_cache/
 
-outputs/
+outputs/*
 
-data/
+data/*
 
-models/
+models/*
+
+configs/credentials/*
+
+# Ignorar datos reales
+/data/
+!data/
+!data/**/*.dvc   # Excepto los archivos de control de DVC
+
+# Ignorar salidas de modelos
+/models/*
+!models/
+!models/**/*.dvc
+
+# Ignorar salidas de reportes
+reports/*
+!reports/
+!reports/**/*.dvc
+
+*.log

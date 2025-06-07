@@ -1,0 +1,6 @@
+[core]
+    remote = gdrive-remote
+['remote "gdrive-remote"']
+    url = gdrive://1t5ujbNznJYD8a4SsDzQhgWAbG067wibr
+    gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = /configs/credentials/proyectomlops-8c09a367c814.json
