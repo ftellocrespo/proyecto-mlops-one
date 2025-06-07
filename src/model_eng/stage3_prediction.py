@@ -31,8 +31,8 @@ class Predict:
         model_dir = cfg.model_data.models_dir
         filename = cfg.model_data.file_model
 
-        model_path = self.get_latest_model_path(model_dir, filename)
-        model = joblib.load(model_path)
+       # model_path = self.get_latest_model_path(model_dir, filename)
+        model = joblib.load("models/model_rf.pkl")
 
         # Datos de prueba como diccionario
         sample_data = {
