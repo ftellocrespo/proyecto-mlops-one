@@ -114,4 +114,4 @@ reports/*
 *.log
 # Ignorar archivos de configuración de DVC
 # Esto es para evitar que se suban configuraciones específicas del entorno
-.dvc/config
+.dvc/*
